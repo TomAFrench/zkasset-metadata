@@ -1,0 +1,8 @@
+{
+  "0x9a5DF4E3C6de1f39fE09cbE6C1F27a4c3AB52d7c": {
+    "name": "zkTESTDAI",
+    "symbol": "zkDAI",
+    "scalingFactor": 1,
+    "linkedToken": "0xc3dbf84Abb494ce5199D5d4D815b10EC29529ff8"
+  }
+}

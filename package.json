@@ -1,0 +1,47 @@
+{
+  "name": "zkasset-metadata",
+  "version": "0.1.0",
+  "description": "Metadata of deployed AZTEC ZkAssets on Ethereum mainnet and testnets",
+  "main": "./lib",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:TomAFrench/zkasset-metadata.git"
+  },
+  "author": "Tom French <tom@tomfren.ch>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TomAFrench/zkasset-metadata/issues"
+  },
+  "dependencies": {
+    "lodash": "^4.17.11"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^5.15.3",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-react": "^7.19.0",
+    "shx": "^0.3.2"
+  },
+  "engines": {
+    "node": ">=8.3"
+  },
+  "files": [
+    "/addresses",
+    "/lib"
+  ],
+  "homepage": "https://github.com/TomAFrench/zkasset-metadata#readme",
+  "scripts": {
+    "build:dev": "yarn clean && babel --copy-files --out-dir ./lib --root-mode upward ./src",
+    "build": "yarn clean && babel --copy-files --out-dir ./lib --root-mode upward ./src",
+    "build:prod": "yarn build",
+    "clean": "shx rm -rf ./lib",
+    "lint": "eslint --ignore-path .eslintignore .",
+    "watch": "yarn build:dev --watch"
+  }
+}
