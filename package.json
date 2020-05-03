@@ -1,6 +1,6 @@
 {
   "name": "zkasset-metadata",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Metadata of deployed AZTEC ZkAssets on Ethereum mainnet and testnets",
   "main": "./lib",
   "repository": {
